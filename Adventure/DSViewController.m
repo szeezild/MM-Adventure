@@ -9,6 +9,7 @@
 #import "DSViewController.h"
 #import "DSAnotherViewController.h"
 
+
 @interface DSViewController ()
 
 
@@ -31,17 +32,30 @@
 
 
 
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    if ([segue.identifier isEqualToString:@"segue1to2"]) {
-//        
-//        DSAnotherViewController *vc2 = (DSAnotherViewController *)segue.destinationViewController;
-//        vc2 = self.textField.text;
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender
+{
+    
+        
+    DSAnotherViewController *destVC = segue.destinationViewController;
+    
+    segue.destinationViewController.title = button.currentTitle
+
+
+
+}
+
+
+// Code from Intergalatic Traveler
+//DSDestinationViewController *vc = segue.destinationViewController;
+//
+//if (sender == self.planetPurpleButton ) {
+//    vc.view.backgroundColor = [UIColor purpleColor];
+//    vc.imageView.image = [UIImage imageNamed:@"purplePlanet"];
+//} else {
 //    
-//    }
+//    vc.view.backgroundColor = [UIColor redColor];
+//    vc.imageView.image = [UIImage imageNamed:@"RedDwarf"];
 //}
-
-
 
 
 
