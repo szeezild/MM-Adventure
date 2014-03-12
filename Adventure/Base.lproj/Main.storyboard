@@ -250,7 +250,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dEY-ZA-ovp" kind="unwind" unwindAction="backToViewControllerOne:" id="Ymi-Xk-uRs"/>
+                                    <segue destination="dEY-ZA-ovp" kind="unwind" unwindAction="backToDSViewController:" id="LMp-nG-4K0"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan gets married with four children. The end." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="goE-JN-yoM">
@@ -274,10 +274,10 @@
             </objects>
             <point key="canvasLocation" x="2782" y="305"/>
         </scene>
-        <!--Another View Controller - Clear up boxes-->
+        <!--Another View Controller-->
         <scene sceneID="1ue-ds-wl3">
             <objects>
-                <viewController title="Clear up boxes" id="EMn-aj-Hmm" customClass="DSAnotherViewController" sceneMemberID="viewController">
+                <viewController id="EMn-aj-Hmm" customClass="DSAnotherViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aRw-Pz-TF0"/>
                         <viewControllerLayoutGuide type="bottom" id="LvY-cA-A0P"/>
@@ -294,7 +294,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xxI-BS-KnK" kind="push" id="TWc-ke-vDb"/>
+                                    <segue destination="xxI-BS-KnK" kind="push" identifier="segue1to2" id="TWc-ke-vDb"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Finishes cleaning and finds a crumpled photo of a beautiful with a phone number." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WUb-Qy-J9p">
@@ -337,7 +337,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vle-MR-AH8" kind="push" id="AHp-3t-CvA"/>
+                                    <segue destination="vle-MR-AH8" kind="push" identifier="segue2to3" id="AHp-3t-CvA"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Calls the girl and convinces her to meet him for a drink that evening." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cO8-HI-TMH">
@@ -391,7 +391,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Unt-IX-J9q" kind="push" id="x73-g6-523"/>
+                                    <segue destination="Unt-IX-J9q" kind="push" identifier="segue3to4" id="x73-g6-523"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -423,7 +423,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4i4-Ce-0ts" kind="push" id="Ynk-Uw-fZh"/>
+                                    <segue destination="4i4-Ce-0ts" kind="push" identifier="segue4to5" id="Ynk-Uw-fZh"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan feels woozy and passes out in the street." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wff-ZR-gLO">
@@ -466,7 +466,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fyp-71-DXq" kind="unwind" unwindAction="backToViewControllerOne:" id="xZS-zh-tRh"/>
+                                    <segue destination="fyp-71-DXq" kind="unwind" unwindAction="backToDSViewController:" id="Lk7-VB-BRq"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan gets stomach pumped. The end." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7wm-MW-QTh">

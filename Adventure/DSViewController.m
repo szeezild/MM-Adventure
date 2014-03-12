@@ -7,14 +7,15 @@
 //
 
 #import "DSViewController.h"
+#import "DSAnotherViewController.h"
 
 @interface DSViewController ()
 
 
 @property (weak, nonatomic) IBOutlet UIButton *clearButton;
-
-
 @property (weak, nonatomic) IBOutlet UIButton *eatButton;
+
+
 
 @end
 
@@ -29,23 +30,23 @@
 }
 
 
-- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender {
-    
-    UIViewController *vc = [[UIViewController alloc] init];
-    
-    vc = segue.destinationViewController;
-////    
-////    if (sender == self.clearButton) {
-////        
-////    } else {
-////        
-////    }
-    
-    
-}
+
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//    if ([segue.identifier isEqualToString:@"segue1to2"]) {
+//        
+//        DSAnotherViewController *vc2 = (DSAnotherViewController *)segue.destinationViewController;
+//        vc2 = self.textField.text;
+//    
+//    }
+//}
 
 
-- (IBAction)backToViewControllerOne:(UIStoryboardSegue *)segue
+
+
+
+
+- (IBAction)backToDSViewController:(UIStoryboardSegue *)segue
 {
     
 }
