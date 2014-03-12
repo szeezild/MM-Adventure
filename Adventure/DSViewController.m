@@ -10,15 +10,40 @@
 
 @interface DSViewController ()
 
+
+@property (weak, nonatomic) IBOutlet UIButton *clearButton;
+
+
+@property (weak, nonatomic) IBOutlet UIButton *eatButton;
+
 @end
 
 @implementation DSViewController
+
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender {
+    
+    UIViewController *vc = [[UIViewController alloc] init];
+    
+    vc = segue.destinationViewController;
+//    
+//    if (sender == self.clearButton) {
+//        
+//    } else {
+//        
+//    }
+    
+    
+}
+
 
 - (void)didReceiveMemoryWarning
 {
