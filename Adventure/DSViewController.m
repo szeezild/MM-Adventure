@@ -34,16 +34,21 @@
     UIViewController *vc = [[UIViewController alloc] init];
     
     vc = segue.destinationViewController;
-//    
-//    if (sender == self.clearButton) {
-//        
-//    } else {
-//        
-//    }
+////    
+////    if (sender == self.clearButton) {
+////        
+////    } else {
+////        
+////    }
     
     
 }
 
+
+- (IBAction)backToViewControllerOne:(UIStoryboardSegue *)segue
+{
+    
+}
 
 - (void)didReceiveMemoryWarning
 {

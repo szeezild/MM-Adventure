@@ -210,8 +210,8 @@
                                     <segue destination="dtn-wc-uih" kind="push" id="ids-gx-V8P"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Soon the pair recognize they were meant to be together and recycle thorought eternity." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pxP-6H-6CM">
-                                <rect key="frame" x="40" y="58" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Soon the pair recognize they were meant to be together and recycle thoroughout eternity." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pxP-6H-6CM">
+                                <rect key="frame" x="40" y="74" width="240" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -242,13 +242,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eN-vf-0wx">
-                                <rect key="frame" x="95" y="364" width="131" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8T-Ic-PVt">
+                                <rect key="frame" x="73" y="370" width="175" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Restart Story">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dEY-ZA-ovp" kind="unwind" unwindAction="backToViewControllerOne:" id="Ymi-Xk-uRs"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan gets married with four children. The end." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="goE-JN-yoM">
                                 <rect key="frame" x="40" y="104" width="240" height="77"/>
@@ -267,8 +270,9 @@
                     <navigationItem key="navigationItem" id="NHh-Ah-EkN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r1O-kh-nUG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="dEY-ZA-ovp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2741" y="305"/>
+            <point key="canvasLocation" x="2782" y="305"/>
         </scene>
         <!--Another View Controller - Clear up boxes-->
         <scene sceneID="1ue-ds-wl3">
@@ -282,15 +286,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwD-pj-zqe">
-                                <rect key="frame" x="79" y="373" width="163" height="46"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHZ-Ec-5km">
+                                <rect key="frame" x="91" y="356" width="138" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xxI-BS-KnK" kind="push" id="Glf-mb-Ueg"/>
+                                    <segue destination="xxI-BS-KnK" kind="push" id="TWc-ke-vDb"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Finishes cleaning and finds a crumpled photo of a beautiful with a phone number." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WUb-Qy-J9p">
@@ -308,9 +312,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="5G2-Bd-4jh"/>
-                    <connections>
-                        <outlet property="continueButton" destination="iwD-pj-zqe" id="28v-6W-U3F"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="poU-SH-BF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -328,15 +329,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0u-OF-TVH">
-                                <rect key="frame" x="78" y="372" width="165" height="46"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iI2-jS-sGP">
+                                <rect key="frame" x="99" y="393" width="123" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vle-MR-AH8" kind="push" id="GdM-sI-1Fw"/>
+                                    <segue destination="vle-MR-AH8" kind="push" id="AHp-3t-CvA"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Calls the girl and convinces her to meet him for a drink that evening." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cO8-HI-TMH">
@@ -354,9 +355,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="RpO-Kf-ygH"/>
-                    <connections>
-                        <outlet property="continueButton" destination="c0u-OF-TVH" id="huC-ts-lfV"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sYf-vd-ROb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -385,24 +383,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbd-Lh-AhY">
-                                <rect key="frame" x="105" y="371" width="115" height="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adu-pu-FmX">
+                                <rect key="frame" x="99" y="388" width="127" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Unt-IX-J9q" kind="push" id="uUp-z1-ORG"/>
+                                    <segue destination="Unt-IX-J9q" kind="push" id="x73-g6-523"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Bbu-UQ-lja"/>
-                    <connections>
-                        <outlet property="continueButton" destination="pbd-Lh-AhY" id="jd9-t6-feL"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeD-NI-vCG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -420,15 +415,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8N-6x-VpF">
-                                <rect key="frame" x="94" y="377" width="132" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvO-BD-vHX">
+                                <rect key="frame" x="75" y="375" width="170" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4i4-Ce-0ts" kind="push" id="Iwo-FC-9JQ"/>
+                                    <segue destination="4i4-Ce-0ts" kind="push" id="Ynk-Uw-fZh"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan feels woozy and passes out in the street." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wff-ZR-gLO">
@@ -446,13 +441,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="0uZ-as-oHh"/>
-                    <connections>
-                        <outlet property="continueButton" destination="D8N-6x-VpF" id="XHG-oz-L4B"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gJ-R2-Fhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2345" y="-299"/>
+            <point key="canvasLocation" x="2359" y="-299"/>
         </scene>
         <!--Another View Controller-->
         <scene sceneID="YHJ-XS-9Bb">
@@ -469,20 +461,23 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1k-00-7AZ">
                                 <rect key="frame" x="75" y="371" width="171" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Restart Story">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fyp-71-DXq" kind="unwind" unwindAction="backToViewControllerOne:" id="xZS-zh-tRh"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan gets stomach pumped. The end." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7wm-MW-QTh">
-                                <rect key="frame" x="40" y="80" width="240" height="128"/>
+                                <rect key="frame" x="40" y="80" width="240" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2qB-Zs-DqL">
-                                <rect key="frame" x="40" y="225" width="240" height="128"/>
+                                <rect key="frame" x="40" y="202" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -491,8 +486,9 @@
                     <navigationItem key="navigationItem" id="g98-MZ-Kra"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tq3-6d-HAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fyp-71-DXq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2741" y="-299"/>
+            <point key="canvasLocation" x="2782" y="-299"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="77p-PX-OmK">
