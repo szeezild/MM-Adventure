@@ -22,12 +22,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	
 }
 
 
-- (IBAction)backToViewControllerOne:(UIStoryboardSegue *)segue
+
+// here, prepareForSegue sets title of all the AnotherVCs just before the segue is called
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender
 {
+    
+    [segue.destinationViewController setTitle:sender.currentTitle];
     
 }
 

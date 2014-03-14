@@ -30,7 +30,6 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan wakes up in the Mobile Maker space surrounded by empty pizza boxes." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jIl-HH-Zfy">
                                 <rect key="frame" x="20" y="131" width="280" height="102"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -45,13 +44,21 @@
                                     <segue destination="EMn-aj-Hmm" kind="push" id="VSn-W7-MJX"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lre-0V-YBO">
+                                <rect key="frame" x="32" y="228" width="256" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.80000001192092896" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="NJv-d6-whj"/>
                     <connections>
                         <outlet property="clearButton" destination="EEX-vI-mog" id="Dgd-L3-Hz8"/>
                         <outlet property="eatButton" destination="FM7-ur-IUE" id="XiN-4y-bdt"/>
+                        <outlet property="recapLabel" destination="lre-0V-YBO" id="HWE-eh-r6a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -290,7 +297,7 @@
                                 <rect key="frame" x="49" y="385" width="223" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Continue">
+                                <state key="normal" title="He calls her">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -304,7 +311,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R81-R3-3q6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="purplePlanet.png" translatesAutoresizingMaskIntoConstraints="NO" id="R81-R3-3q6">
                                 <rect key="frame" x="40" y="200" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -312,6 +319,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="5G2-Bd-4jh"/>
+                    <connections>
+                        <outlet property="imageView" destination="R81-R3-3q6" id="cmh-Pn-hao"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="poU-SH-BF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -330,10 +340,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iI2-jS-sGP">
-                                <rect key="frame" x="99" y="393" width="123" height="45"/>
+                                <rect key="frame" x="55" y="391" width="211" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Continue">
+                                <state key="normal" title="They meet for a drink">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -356,7 +366,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="RpO-Kf-ygH"/>
                     <connections>
-                        <outlet property="labelText" destination="cO8-HI-TMH" id="wiF-QN-dSZ"/>
+                        <outlet property="imageView" destination="PC8-7Q-zlW" id="Gee-2g-6yX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sYf-vd-ROb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -387,10 +397,10 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adu-pu-FmX">
-                                <rect key="frame" x="99" y="388" width="127" height="38"/>
+                                <rect key="frame" x="64" y="388" width="193" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Continue">
+                                <state key="normal" title="Ryan passes out">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -401,6 +411,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Bbu-UQ-lja"/>
+                    <connections>
+                        <outlet property="imageView" destination="L6l-Jn-uyW" id="yJN-Ep-wQP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeD-NI-vCG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -422,7 +435,7 @@
                                 <rect key="frame" x="75" y="375" width="170" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Continue">
+                                <state key="normal" title="Bad news ahead">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -444,6 +457,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="0uZ-as-oHh"/>
+                    <connections>
+                        <outlet property="imageView" destination="gMK-QY-ei7" id="Ik1-B5-QcX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gJ-R2-Fhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -487,6 +503,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="g98-MZ-Kra"/>
+                    <connections>
+                        <outlet property="imageView" destination="2qB-Zs-DqL" id="iEn-hM-Wx6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tq3-6d-HAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="fyp-71-DXq" userLabel="Exit" sceneMemberID="exit"/>
@@ -512,6 +531,9 @@
             <point key="canvasLocation" x="170" y="10"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="purplePlanet.png" width="1920" height="1080"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

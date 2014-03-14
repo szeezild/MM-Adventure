@@ -23,6 +23,7 @@
 		07733BA518CFB27D0020A850 /* AdventureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07733BA418CFB27D0020A850 /* AdventureTests.m */; };
 		07733BAF18CFC0400020A850 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07733BAE18CFC0400020A850 /* CheckMate.framework */; };
 		07733BB218CFC7600020A850 /* DSAnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07733BB118CFC7600020A850 /* DSAnotherViewController.m */; };
+		07733CBF18D0EF830020A850 /* purplePlanet.png in Resources */ = {isa = PBXBuildFile; fileRef = 07733CBE18D0EF830020A850 /* purplePlanet.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		07733BAE18CFC0400020A850 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CheckMate.framework; sourceTree = "<group>"; };
 		07733BB018CFC7600020A850 /* DSAnotherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAnotherViewController.h; sourceTree = "<group>"; };
 		07733BB118CFC7600020A850 /* DSAnotherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAnotherViewController.m; sourceTree = "<group>"; };
+		07733CBE18D0EF830020A850 /* purplePlanet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purplePlanet.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		07733B7F18CFB27D0020A850 /* Adventure */ = {
 			isa = PBXGroup;
 			children = (
+				07733CBE18D0EF830020A850 /* purplePlanet.png */,
 				07733B8818CFB27D0020A850 /* DSAppDelegate.h */,
 				07733B8918CFB27D0020A850 /* DSAppDelegate.m */,
 				07733B8B18CFB27D0020A850 /* Main.storyboard */,
@@ -241,6 +244,7 @@
 				07733B9218CFB27D0020A850 /* Images.xcassets in Resources */,
 				07733B8418CFB27D0020A850 /* InfoPlist.strings in Resources */,
 				07733B8D18CFB27D0020A850 /* Main.storyboard in Resources */,
+				07733CBF18D0EF830020A850 /* purplePlanet.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +483,7 @@
 				07733BAA18CFB27D0020A850 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07733BAB18CFB27D0020A850 /* Build configuration list for PBXNativeTarget "AdventureTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +492,7 @@
 				07733BAD18CFB27D0020A850 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

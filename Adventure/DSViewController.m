@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *clearButton;
 @property (weak, nonatomic) IBOutlet UIButton *eatButton;
 
+@property (weak, nonatomic) IBOutlet UILabel *recapLabel;
 
 
 @end
@@ -31,39 +32,24 @@
 }
 
 
-
+// here, prepareForSegue sets the title on the first VC from the first segue
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender
 {
     
-        
-    DSAnotherViewController *destVC = segue.destinationViewController;
-    
-    segue.destinationViewController.title = button.currentTitle
-
-
-
+    [segue.destinationViewController setTitle:sender.currentTitle];
 }
-
-
-// Code from Intergalatic Traveler
-//DSDestinationViewController *vc = segue.destinationViewController;
-//
-//if (sender == self.planetPurpleButton ) {
-//    vc.view.backgroundColor = [UIColor purpleColor];
-//    vc.imageView.image = [UIImage imageNamed:@"purplePlanet"];
-//} else {
-//    
-//    vc.view.backgroundColor = [UIColor redColor];
-//    vc.imageView.image = [UIImage imageNamed:@"RedDwarf"];
-//}
-
 
 
 
 - (IBAction)backToDSViewController:(UIStoryboardSegue *)segue
 {
     
+//    segue.recapLabel.text = segue.sourceViewController;
+    
 }
+
+
+
 
 - (void)didReceiveMemoryWarning
 {

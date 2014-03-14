@@ -11,9 +11,7 @@
 @interface DSAnotherViewController : UIViewController
 
 
-@property (weak, nonatomic) IBOutlet UITextView *labelText;
-
-
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 
 @end
