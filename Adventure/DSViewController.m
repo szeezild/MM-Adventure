@@ -8,6 +8,7 @@
 
 #import "DSViewController.h"
 #import "DSAnotherViewController.h"
+#import "DSOneEndViewController.h"
 
 
 @interface DSViewController ()
@@ -16,7 +17,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *clearButton;
 @property (weak, nonatomic) IBOutlet UIButton *eatButton;
 
-@property (weak, nonatomic) IBOutlet UILabel *recapLabel;
 
 
 @end
@@ -32,7 +32,7 @@
 }
 
 
-// here, prepareForSegue sets the title on the first VC from the first segue
+// here, prepareForSegue sets the title on the first AnotherVC from the first segue
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender
 {
     

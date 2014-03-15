@@ -24,6 +24,18 @@
 		07733BAF18CFC0400020A850 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07733BAE18CFC0400020A850 /* CheckMate.framework */; };
 		07733BB218CFC7600020A850 /* DSAnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07733BB118CFC7600020A850 /* DSAnotherViewController.m */; };
 		07733CBF18D0EF830020A850 /* purplePlanet.png in Resources */ = {isa = PBXBuildFile; fileRef = 07733CBE18D0EF830020A850 /* purplePlanet.png */; };
+		07C031B918D4E48500F83B93 /* phoneNumber.png in Resources */ = {isa = PBXBuildFile; fileRef = 07C031B818D4E48500F83B93 /* phoneNumber.png */; };
+		07C031BB18D4E54100F83B93 /* martini-glass.png in Resources */ = {isa = PBXBuildFile; fileRef = 07C031BA18D4E54100F83B93 /* martini-glass.png */; };
+		07C031BD18D4E61500F83B93 /* women drinking.png in Resources */ = {isa = PBXBuildFile; fileRef = 07C031BC18D4E61500F83B93 /* women drinking.png */; };
+		07C031BF18D4E6AE00F83B93 /* man dizzy.png in Resources */ = {isa = PBXBuildFile; fileRef = 07C031BE18D4E6AE00F83B93 /* man dizzy.png */; };
+		07C031C118D4E72F00F83B93 /* stomach pump.png in Resources */ = {isa = PBXBuildFile; fileRef = 07C031C018D4E72F00F83B93 /* stomach pump.png */; };
+		07C031C318D4E7F300F83B93 /* man walking.png in Resources */ = {isa = PBXBuildFile; fileRef = 07C031C218D4E7F300F83B93 /* man walking.png */; };
+		07C031C518D4E86B00F83B93 /* woman night dress.png in Resources */ = {isa = PBXBuildFile; fileRef = 07C031C418D4E86B00F83B93 /* woman night dress.png */; };
+		07C031C718D4E8F300F83B93 /* garbage dump.png in Resources */ = {isa = PBXBuildFile; fileRef = 07C031C618D4E8F300F83B93 /* garbage dump.png */; };
+		07C031C918D4E96F00F83B93 /* holding hands.png in Resources */ = {isa = PBXBuildFile; fileRef = 07C031C818D4E96F00F83B93 /* holding hands.png */; };
+		07C031CB18D4EA3800F83B93 /* child crying.png in Resources */ = {isa = PBXBuildFile; fileRef = 07C031CA18D4EA3800F83B93 /* child crying.png */; };
+		07C031CD18D4FBD000F83B93 /* Ryan Striker.png in Resources */ = {isa = PBXBuildFile; fileRef = 07C031CC18D4FBD000F83B93 /* Ryan Striker.png */; };
+		07C031D018D4FC8500F83B93 /* DSOneEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C031CF18D4FC8500F83B93 /* DSOneEndViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +72,19 @@
 		07733BB018CFC7600020A850 /* DSAnotherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAnotherViewController.h; sourceTree = "<group>"; };
 		07733BB118CFC7600020A850 /* DSAnotherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAnotherViewController.m; sourceTree = "<group>"; };
 		07733CBE18D0EF830020A850 /* purplePlanet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purplePlanet.png; sourceTree = "<group>"; };
+		07C031B818D4E48500F83B93 /* phoneNumber.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phoneNumber.png; sourceTree = "<group>"; };
+		07C031BA18D4E54100F83B93 /* martini-glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "martini-glass.png"; sourceTree = "<group>"; };
+		07C031BC18D4E61500F83B93 /* women drinking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "women drinking.png"; sourceTree = "<group>"; };
+		07C031BE18D4E6AE00F83B93 /* man dizzy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man dizzy.png"; sourceTree = "<group>"; };
+		07C031C018D4E72F00F83B93 /* stomach pump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stomach pump.png"; sourceTree = "<group>"; };
+		07C031C218D4E7F300F83B93 /* man walking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man walking.png"; sourceTree = "<group>"; };
+		07C031C418D4E86B00F83B93 /* woman night dress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "woman night dress.png"; sourceTree = "<group>"; };
+		07C031C618D4E8F300F83B93 /* garbage dump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "garbage dump.png"; sourceTree = "<group>"; };
+		07C031C818D4E96F00F83B93 /* holding hands.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "holding hands.png"; sourceTree = "<group>"; };
+		07C031CA18D4EA3800F83B93 /* child crying.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "child crying.png"; sourceTree = "<group>"; };
+		07C031CC18D4FBD000F83B93 /* Ryan Striker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ryan Striker.png"; sourceTree = "<group>"; };
+		07C031CE18D4FC8500F83B93 /* DSOneEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSOneEndViewController.h; sourceTree = "<group>"; };
+		07C031CF18D4FC8500F83B93 /* DSOneEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSOneEndViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +146,17 @@
 		07733B7F18CFB27D0020A850 /* Adventure */ = {
 			isa = PBXGroup;
 			children = (
+				07C031CC18D4FBD000F83B93 /* Ryan Striker.png */,
+				07C031CA18D4EA3800F83B93 /* child crying.png */,
+				07C031C818D4E96F00F83B93 /* holding hands.png */,
+				07C031C618D4E8F300F83B93 /* garbage dump.png */,
+				07C031C418D4E86B00F83B93 /* woman night dress.png */,
+				07C031C218D4E7F300F83B93 /* man walking.png */,
+				07C031C018D4E72F00F83B93 /* stomach pump.png */,
+				07C031BE18D4E6AE00F83B93 /* man dizzy.png */,
+				07C031BC18D4E61500F83B93 /* women drinking.png */,
+				07C031BA18D4E54100F83B93 /* martini-glass.png */,
+				07C031B818D4E48500F83B93 /* phoneNumber.png */,
 				07733CBE18D0EF830020A850 /* purplePlanet.png */,
 				07733B8818CFB27D0020A850 /* DSAppDelegate.h */,
 				07733B8918CFB27D0020A850 /* DSAppDelegate.m */,
@@ -131,6 +167,8 @@
 				07733B8018CFB27D0020A850 /* Supporting Files */,
 				07733BB018CFC7600020A850 /* DSAnotherViewController.h */,
 				07733BB118CFC7600020A850 /* DSAnotherViewController.m */,
+				07C031CE18D4FC8500F83B93 /* DSOneEndViewController.h */,
+				07C031CF18D4FC8500F83B93 /* DSOneEndViewController.m */,
 			);
 			path = Adventure;
 			sourceTree = "<group>";
@@ -241,10 +279,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C031B918D4E48500F83B93 /* phoneNumber.png in Resources */,
+				07C031C318D4E7F300F83B93 /* man walking.png in Resources */,
 				07733B9218CFB27D0020A850 /* Images.xcassets in Resources */,
 				07733B8418CFB27D0020A850 /* InfoPlist.strings in Resources */,
 				07733B8D18CFB27D0020A850 /* Main.storyboard in Resources */,
+				07C031C118D4E72F00F83B93 /* stomach pump.png in Resources */,
 				07733CBF18D0EF830020A850 /* purplePlanet.png in Resources */,
+				07C031CB18D4EA3800F83B93 /* child crying.png in Resources */,
+				07C031C518D4E86B00F83B93 /* woman night dress.png in Resources */,
+				07C031BB18D4E54100F83B93 /* martini-glass.png in Resources */,
+				07C031BF18D4E6AE00F83B93 /* man dizzy.png in Resources */,
+				07C031CD18D4FBD000F83B93 /* Ryan Striker.png in Resources */,
+				07C031C718D4E8F300F83B93 /* garbage dump.png in Resources */,
+				07C031BD18D4E61500F83B93 /* women drinking.png in Resources */,
+				07C031C918D4E96F00F83B93 /* holding hands.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +315,7 @@
 				07733B8618CFB27D0020A850 /* main.m in Sources */,
 				07733B9018CFB27D0020A850 /* DSViewController.m in Sources */,
 				07733B8A18CFB27D0020A850 /* DSAppDelegate.m in Sources */,
+				07C031D018D4FC8500F83B93 /* DSOneEndViewController.m in Sources */,
 				07733BB218CFC7600020A850 /* DSAnotherViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

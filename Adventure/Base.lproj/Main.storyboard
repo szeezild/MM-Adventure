@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="CKz-Mf-Eab">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="CKz-Mf-Eab">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FM7-ur-IUE">
-                                <rect key="frame" x="92" y="381" width="137" height="45"/>
+                                <rect key="frame" x="92" y="400" width="137" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Eat boxes">
@@ -27,14 +27,14 @@
                                     <segue destination="vUf-tw-vq7" kind="push" id="7e6-2z-Lqn"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan wakes up in the Mobile Maker space surrounded by empty pizza boxes." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jIl-HH-Zfy">
-                                <rect key="frame" x="20" y="131" width="280" height="102"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="wakes up in the Mobile Maker space surrounded by empty pizza boxes." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jIl-HH-Zfy">
+                                <rect key="frame" x="47" y="219" width="227" height="102"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEX-vI-mog">
-                                <rect key="frame" x="73" y="295" width="174" height="42"/>
+                                <rect key="frame" x="73" y="338" width="174" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Clear up boxes">
@@ -44,21 +44,25 @@
                                     <segue destination="EMn-aj-Hmm" kind="push" id="VSn-W7-MJX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lre-0V-YBO">
-                                <rect key="frame" x="32" y="228" width="256" height="59"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ryan Striker" translatesAutoresizingMaskIntoConstraints="NO" id="i5z-ws-bpU">
+                                <rect key="frame" x="126" y="80" width="68" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ryan" borderStyle="bezel" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DLQ-Oa-dfn">
+                                <rect key="frame" x="97" y="178" width="126" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.80000001192092896" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="NJv-d6-whj"/>
                     <connections>
                         <outlet property="clearButton" destination="EEX-vI-mog" id="Dgd-L3-Hz8"/>
                         <outlet property="eatButton" destination="FM7-ur-IUE" id="XiN-4y-bdt"/>
-                        <outlet property="recapLabel" destination="lre-0V-YBO" id="HWE-eh-r6a"/>
+                        <outlet property="userName" destination="DLQ-Oa-dfn" id="QLL-XA-xuL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -95,8 +99,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1G-RU-wPS">
-                                <rect key="frame" x="40" y="212" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="man walking" translatesAutoresizingMaskIntoConstraints="NO" id="a1G-RU-wPS">
+                                <rect key="frame" x="40" y="191" width="240" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -121,7 +125,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5v7-35-ypd">
-                                <rect key="frame" x="95" y="353" width="131" height="41"/>
+                                <rect key="frame" x="95" y="389" width="131" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Continue">
@@ -131,15 +135,15 @@
                                     <segue destination="NMa-ap-RqH" kind="push" id="a4T-mb-DvK"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="He meets a tall beautiful stranger, who convinces Ryan to become a &quot;human recycler&quot;." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rDV-M0-4vB">
-                                <rect key="frame" x="40" y="90" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="He meets a tall beautiful stranger, who convinces him to become a &quot;human recycler&quot;." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rDV-M0-4vB">
+                                <rect key="frame" x="40" y="73" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IAG-IF-q0H">
-                                <rect key="frame" x="40" y="217" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="woman night dress" translatesAutoresizingMaskIntoConstraints="NO" id="IAG-IF-q0H">
+                                <rect key="frame" x="40" y="171" width="240" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -174,15 +178,15 @@
                                     <segue destination="Cae-5d-NYj" kind="push" id="lfK-ZU-4fg"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan and this lady walk hand-in-hand through garbage dumps all over town, looking for recyclables." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ndz-yl-eQb">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan and his lady walk hand-in-hand through garbage dumps all over town, looking for recyclables." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ndz-yl-eQb">
                                 <rect key="frame" x="40" y="83" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nhi-6H-0dU">
-                                <rect key="frame" x="40" y="211" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="garbage dump" translatesAutoresizingMaskIntoConstraints="NO" id="nhi-6H-0dU">
+                                <rect key="frame" x="40" y="211" width="240" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -224,7 +228,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SMW-Ij-vUQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="holding hands" translatesAutoresizingMaskIntoConstraints="NO" id="SMW-Ij-vUQ">
                                 <rect key="frame" x="40" y="201" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -267,8 +271,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qmZ-dq-Web">
-                                <rect key="frame" x="40" y="212" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="child crying" translatesAutoresizingMaskIntoConstraints="NO" id="qmZ-dq-Web">
+                                <rect key="frame" x="40" y="173" width="240" height="197"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -304,15 +308,15 @@
                                     <segue destination="xxI-BS-KnK" kind="push" identifier="segue1to2" id="TWc-ke-vDb"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Finishes cleaning and finds a crumpled photo of a beautiful with a phone number." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WUb-Qy-J9p">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="He finishes cleaning and finds a crumpled photo of a beautiful with a phone number." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WUb-Qy-J9p">
                                 <rect key="frame" x="20" y="102" width="280" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="purplePlanet.png" translatesAutoresizingMaskIntoConstraints="NO" id="R81-R3-3q6">
-                                <rect key="frame" x="40" y="200" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="phoneNumber" translatesAutoresizingMaskIntoConstraints="NO" id="R81-R3-3q6">
+                                <rect key="frame" x="40" y="200" width="240" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -350,15 +354,15 @@
                                     <segue destination="vle-MR-AH8" kind="push" identifier="segue2to3" id="AHp-3t-CvA"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Calls the girl and convinces her to meet him for a drink that evening." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cO8-HI-TMH">
-                                <rect key="frame" x="20" y="96" width="275" height="121"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="He calls the girl and convinces her to meet him for a drink that evening." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cO8-HI-TMH">
+                                <rect key="frame" x="37" y="92" width="246" height="121"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PC8-7Q-zlW">
-                                <rect key="frame" x="35" y="225" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="martini-glass" translatesAutoresizingMaskIntoConstraints="NO" id="PC8-7Q-zlW">
+                                <rect key="frame" x="37" y="198" width="240" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -385,12 +389,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L6l-Jn-uyW">
-                                <rect key="frame" x="53" y="213" width="219" height="131"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="women drinking" translatesAutoresizingMaskIntoConstraints="NO" id="L6l-Jn-uyW">
+                                <rect key="frame" x="53" y="205" width="219" height="175"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="They meet and the woman finds Ryan charming &amp; sophisticated, but slips him a mickey, just for fun." translatesAutoresizingMaskIntoConstraints="NO" id="YBd-Ex-wCR">
-                                <rect key="frame" x="42" y="95" width="240" height="102"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan meets the woman and she finds him charming &amp; sophisticated, but slips him a mickey, just for fun." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YBd-Ex-wCR">
+                                <rect key="frame" x="33" y="84" width="254" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -442,15 +446,15 @@
                                     <segue destination="4i4-Ce-0ts" kind="push" identifier="segue4to5" id="Ynk-Uw-fZh"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan feels woozy and passes out in the street." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wff-ZR-gLO">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="He feels woozy and passes out in the street." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wff-ZR-gLO">
                                 <rect key="frame" x="51" y="88" width="219" height="112"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMK-QY-ei7">
-                                <rect key="frame" x="40" y="224" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="man dizzy" translatesAutoresizingMaskIntoConstraints="NO" id="gMK-QY-ei7">
+                                <rect key="frame" x="40" y="189" width="240" height="185"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -495,7 +499,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2qB-Zs-DqL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stomach pump" translatesAutoresizingMaskIntoConstraints="NO" id="2qB-Zs-DqL">
                                 <rect key="frame" x="40" y="202" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -532,7 +536,17 @@
         </scene>
     </scenes>
     <resources>
-        <image name="purplePlanet.png" width="1920" height="1080"/>
+        <image name="Ryan Striker" width="97" height="97"/>
+        <image name="child crying" width="547" height="652"/>
+        <image name="garbage dump" width="500" height="334"/>
+        <image name="holding hands" width="610" height="434"/>
+        <image name="man dizzy" width="264" height="350"/>
+        <image name="man walking" width="563" height="348"/>
+        <image name="martini-glass" width="500" height="444"/>
+        <image name="phoneNumber" width="507" height="338"/>
+        <image name="stomach pump" width="500" height="243"/>
+        <image name="woman night dress" width="265" height="397"/>
+        <image name="women drinking" width="1220" height="908"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

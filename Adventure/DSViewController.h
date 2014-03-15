@@ -10,4 +10,9 @@
 
 @interface DSViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *userName;
+
+
+
+
 @end
