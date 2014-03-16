@@ -27,8 +27,8 @@
                                     <segue destination="vUf-tw-vq7" kind="push" id="7e6-2z-Lqn"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="wakes up in the Mobile Maker space surrounded by empty pizza boxes." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jIl-HH-Zfy">
-                                <rect key="frame" x="47" y="219" width="227" height="102"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan wakes up in the Mobile Maker space surrounded by empty pizza boxes." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jIl-HH-Zfy">
+                                <rect key="frame" x="47" y="226" width="227" height="102"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -54,6 +54,9 @@
                                 <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
+                                <connections>
+                                    <action selector="onUserChange:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="uZb-aK-66F"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
@@ -62,7 +65,8 @@
                     <connections>
                         <outlet property="clearButton" destination="EEX-vI-mog" id="Dgd-L3-Hz8"/>
                         <outlet property="eatButton" destination="FM7-ur-IUE" id="XiN-4y-bdt"/>
-                        <outlet property="userName" destination="DLQ-Oa-dfn" id="QLL-XA-xuL"/>
+                        <outlet property="mainTextView" destination="jIl-HH-Zfy" id="L0U-2N-adU"/>
+                        <outlet property="userName" destination="DLQ-Oa-dfn" id="Ar6-9X-Aoc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -301,7 +305,7 @@
                                 <rect key="frame" x="49" y="385" width="223" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="He calls her">
+                                <state key="normal" title="Ryan calls her">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>

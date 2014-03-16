@@ -17,6 +17,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *clearButton;
 @property (weak, nonatomic) IBOutlet UIButton *eatButton;
 
+@property (weak, nonatomic) IBOutlet UITextField *userName;
+
+@property (weak, nonatomic) IBOutlet UITextView *mainTextView;
 
 
 @end
@@ -28,7 +31,35 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.userName.delegate = self;
+}
+
+// to handle custom user name
+- (void) viewWillAppear:(BOOL)animated {
+  
+    NSString *user = self.userName.text;
+    [self changeName:user];
+    
+    
+}
+
+
+// custom method for name change
+- (void) changeName:(NSString *)name {
+    
+    NSString *text = self.mainTextView.text;
+    
+    NSString *str = [text stringByReplacingOccurrencesOfString:@"Ryan" withString:name];
+    
+    self.mainTextView.text = str;
+    
+}
+
+- (IBAction)onUserChange:(id)sender {
+    NSString *user = self.userName.text;
+    [self changeName:user];
+    
 }
 
 
@@ -48,7 +79,12 @@
     
 }
 
-
+    // make keyboard disappear
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.userName resignFirstResponder];
+    return YES;
+}
 
 
 - (void)didReceiveMemoryWarning

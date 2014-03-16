@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DSViewController : UIViewController
-
-@property (weak, nonatomic) IBOutlet UITextField *userName;
+@interface DSViewController : UIViewController <UITextFieldDelegate>
 
 
 
